@@ -3,6 +3,7 @@ import './App.css'
 import Logo from './assets/images/logo.svg'
 import infoImg from './assets/images/info.png'
 import { planos } from './planos'
+import { movies } from './movies'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
 function App() {
@@ -93,6 +94,23 @@ function App() {
         </div>
 
         <img src={infoImg} alt='Info-image' />
+      </section>
+
+      <section className='movie-section'>
+        <h2>Originais Disney+ exclusivos</h2>
+        <p>
+          Só no Disney+ você vê os melhores filmes, séries, curtas e outros conteúdos inéditos.
+        </p>
+
+        <ul className='movie-list'>
+          {movies.map(movie => {
+            return (
+              <li>
+                <img src={movie} alt='' />
+              </li>
+            )
+          })}
+        </ul>
       </section>
     </>
   )
