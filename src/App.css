@@ -271,3 +271,70 @@
 .movie-list li img {
   width: 100%;
 }
+
+/* DOWNLOAD SECTION */
+
+.download-section {
+  margin: 4rem;
+  height: 100vh;
+  background-image: url('./assets/images/dl-image.png');
+  background-size: 100% ;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.download-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.download-section p {
+  width: 100%;
+  max-width: 530px;
+  font-size: 1.15rem;
+  color: #bebebe;
+}
+
+/* ACCESSIBILITY SECTION */
+
+.accessibility-section {
+  padding: 4.5rem 0rem;
+  text-align: center;
+}
+
+.accessibility-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 30px
+}
+
+.accessibility-screens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.single-screen {
+  padding: 12px;
+}
+
+.single-screen img {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+}
+
+.single-screen h3 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 24px
+}
+
+.single-screen li {
+  font-size: 18px;
+  font-weight: 700;
+  color: silver;
+}

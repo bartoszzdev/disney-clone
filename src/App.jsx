@@ -5,6 +5,11 @@ import infoImg from './assets/images/info.png'
 import { planos } from './planos'
 import { movies } from './movies'
 import { MdKeyboardArrowDown } from 'react-icons/md'
+// ACCESSIBILITY ICONS
+import computerImg from './assets/images/screen1.png'
+import screenImg from './assets/images/screen2.png'
+import controlImg from './assets/images/control.png'
+import phoneImg from './assets/images/phone.png'
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -111,6 +116,67 @@ function App() {
             )
           })}
         </ul>
+      </section>
+
+      <section className='download-section'>
+        <div className='download-text'>
+          <h2>Baixe filmes e séries</h2>
+          <p>
+            Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
+          </p>
+        </div>
+      </section>
+
+      <section className='accessibility-section'>
+          <h2>Disponível nos seus dispositivos favoritos</h2>
+
+          <div className='accessibility-screens'>
+            <div className='single-screen'>
+              <img src={computerImg} alt='Computer' />
+              <h3>Computador</h3>
+              <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>PC Windows</li>
+              </ul>
+            </div>
+
+            <div className='single-screen'>
+              <img src={screenImg} alt='Tv screen' />
+              <h3>TV</h3>
+              <ul>
+                <li>Amazon Fire TV</li>
+                <li>Android TV</li>
+                <li>Apple TV</li>
+                <li>Chromecast</li>
+                <li>TVs LG</li>
+                <li>Roku</li>
+                <li>Samsung</li>
+              </ul>
+            </div>
+
+            <div className='single-screen'>
+              <img src={controlImg} alt='Controller' />
+              <h3>Videogames</h3>
+              <ul>
+                <li>PS4</li>
+                <li>PS5</li>
+                <li>Xbox One</li>
+                <li>Xbox Series X</li>
+                <li>Xbox Series S</li>
+              </ul>
+            </div>
+
+            <div className='single-screen'>
+              <img src={phoneImg} alt='Cellphone' />
+              <h3>Celulares e tablets</h3>
+              <ul>
+                <li>Tablets Amazon Fire</li>
+                <li>Celulares e Tablets Android</li>
+                <li>iPhone e iPad</li>
+              </ul>
+            </div>
+          </div>
       </section>
     </>
   )
