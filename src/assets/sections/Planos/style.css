@@ -1,0 +1,72 @@
+/* PLANOS */
+
+.planos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.planos-section h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2.3rem;
+}
+
+.planos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.single-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.2rem;
+    margin: 0 2rem;
+    width: 100%;
+    max-width: 350px;
+    background: rgb(3, 12, 63);
+    background: linear-gradient(180deg, rgba(3, 12, 63, 1) 46%, rgba(4, 7, 20, 1) 72%);
+    border: 3px solid #00c6f4;
+}
+
+.title-plan {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #bdbdbe;
+    margin-bottom: 30px
+}
+
+.price-plan {
+    font-size: 1.5rem;
+    color: #f9f9f9
+}
+
+.info-plan {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #bdbdbe;
+    max-width: 270px
+}
+
+.plan-btn {
+    padding: 1rem 2.3rem;
+    margin-top: 27px;
+    background: #006ef5;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #eef3f9;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 105px 20px 120px rgba(4, 7, 20, 0.99);
+    z-index: 1
+}
+
+.planos-section span {
+    font-size: 0.8rem;
+    color: #afb0b1;
+    margin-top: 30px;
+    z-index: 2
+}

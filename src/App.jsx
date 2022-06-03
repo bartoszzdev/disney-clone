@@ -1,15 +1,15 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
-import Logo from './assets/images/logo.svg'
-import infoImg from './assets/images/info.png'
-import { planos } from './planos'
-import { movies } from './movies'
-import { MdKeyboardArrowDown } from 'react-icons/md'
-// ACCESSIBILITY ICONS
-import computerImg from './assets/images/screen1.png'
-import screenImg from './assets/images/screen2.png'
-import controlImg from './assets/images/control.png'
-import phoneImg from './assets/images/phone.png'
+
+// SECTIONS
+import Header from './assets/sections/Header/index';
+import MainContainer from './assets/sections/Main/index';
+import PlanosSection from './assets/sections/Planos/index';
+import InfoSection from './assets/sections/Info/index';
+import MovieSection from './assets/sections/Movies/index';
+import DownloadSection from './assets/sections/Download/index';
+import AccessibilitySection from './assets/sections/Accessibility/index';
+import QuestionSection from './assets/sections/Questions/index';
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -33,6 +33,37 @@ function App() {
   }
 
   return (
+    <>
+      <Header showNavbar={showNavbar} />
+      <MainContainer scrollDown={scrollDown} />
+      <PlanosSection plansSection={plansSection} />
+      <InfoSection />
+      <MovieSection />
+      <DownloadSection />
+      <AccessibilitySection />
+      <QuestionSection />
+    </>
+  )
+}
+
+export default App
+
+
+
+/*
+import Logo from './assets/images/logo.svg'
+import infoImg from './assets/images/info.png'
+import { planos } from './planos'
+import { movies } from './movies'
+import { MdKeyboardArrowDown } from 'react-icons/md'
+
+// ACCESSIBILITY ICONS
+import computerImg from './assets/images/screen1.png'
+import screenImg from './assets/images/screen2.png'
+import controlImg from './assets/images/control.png'
+import phoneImg from './assets/images/phone.png'
+
+return (
     <>
       <button type='button' className='btn-entrar'>
         Entrar
@@ -180,6 +211,8 @@ function App() {
       </section>
     </>
   )
-}
 
-export default App
+
+
+
+*/

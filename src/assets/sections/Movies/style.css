@@ -1,0 +1,33 @@
+/* MOVIES SECTION */
+
+.movie-section {
+    padding: 4.5rem 3.2rem;
+    text-align: center;
+}
+
+.movie-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px
+}
+
+.movie-section p {
+    font-size: 1.4rem;
+    color: #bebebe;
+    margin-bottom: 30px
+}
+
+.movie-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 1.3rem
+}
+
+.movie-list li {
+    justify-self: center;
+    width: 100%
+}
+
+.movie-list li img {
+    width: 100%;
+}

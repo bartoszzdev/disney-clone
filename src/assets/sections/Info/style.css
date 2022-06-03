@@ -1,0 +1,24 @@
+/* INFO */
+
+.info-section {
+    padding: 4.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.info-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px
+}
+
+.info-text p {
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.4rem;
+    color: #bebebe
+}
+
+.info-section img {
+    width: 45%;
+}
