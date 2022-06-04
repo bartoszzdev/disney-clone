@@ -10,16 +10,23 @@ const SingleQuestion = ({ question, answer, itens }) => {
     <div className="single-question">
       <button type="button" onClick={() => setShowAnswer(!showAnswer)}>
         {question}
-        <HiOutlinePlusSm />
+        
+        {showAnswer ? (
+          <HiMinus />
+        ) : (
+          <HiOutlinePlusSm />
+        )}
       </button>
 
       {showAnswer ? (
         <div className="single-answer">
           <p>{answer}</p>
 
-          {itens.map((item, index) => {
-            return <p key={index}>{item}</p>;
-          })}
+          <ul>
+            {itens.map((item, index) => {
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
         </div>
       ) : null}
     </div>
