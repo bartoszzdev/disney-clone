@@ -22,3 +22,30 @@
 .info-section img {
     width: 45%;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+    .info-section {
+        flex-direction: column-reverse;
+        /* padding: 4.5rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center */
+    }
+
+    .info-text h2 {
+        font-size: 2rem;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .info-text p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .info-section img {
+        width: 90%;
+    }
+}

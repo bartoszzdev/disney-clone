@@ -8,7 +8,8 @@
     background-repeat: no-repeat;
     background-size: 100% 115%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .main-content {
@@ -51,9 +52,7 @@
 }
 
 .arrow-btn {
-    position: absolute;
-    bottom: 4rem;
-    left: 6rem;
+    margin: 1rem 6rem;
     font-size: 2rem;
     color: #fff;
     background-color: transparent;
@@ -64,18 +63,60 @@
 
 @keyframes goUp {
     10% {
-        bottom: 4.4rem;
+        transform: translateY(0.4rem);
     }
 
     50% {
-        bottom: 4rem;
+        transform: translateY(0rem);
     }
 
     75% {
-        bottom: 4.2rem
+        transform: translateY(0.2rem);
     }
 
     100% {
-        bottom: 4rem;
+        transform: translateY(0rem);
+   }
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1025px) {
+    .main-container {
+        padding-bottom: 100px;
+        height: auto;
+        background-image: url('../../images/container.jpg');
+        background-position: center top;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .main-content {
+        margin-top: 57%
+    }
+    
+    .main-content h1 {
+        font-size: 1.3rem
+    }
+    
+    .logo-container {
+        width: 220px;
+    }
+    
+    .main-content button {
+        width: 90%;
+        padding: 1.4rem 0rem;
+        font-size: 1rem;
+    }
+    
+    .links a {
+        font-size: 0.85rem;
+    }
+
+/*     .arrow-btn {
+        transform: translateX(-50%);
+        font-size: 3rem;
+    } */
 }

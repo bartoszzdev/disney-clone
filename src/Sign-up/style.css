@@ -1,0 +1,81 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1d29;
+}
+
+.login-container img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.signup-container h3 {
+    font-size: 1.4rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.signup-form input {
+    padding: 7px 12px;
+    background-color: #31343e;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2.1rem;
+    caret-color: #02e7f5;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.signup-form input::placeholder {
+    color: #8f9095;
+}
+
+.signup-form button {
+    padding: 7px 12px;
+    background-color: #0072d2;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.1rem;
+    color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.signup-container span {
+    font-size: 15px;
+    color: #cacaca;
+}
+
+.signup-container span a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-container span a:hover {
+    color: #2c96ee9f;
+    text-decoration: underline;
+}

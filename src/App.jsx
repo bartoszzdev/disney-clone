@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import './App.css'
+//import './App.css'
 
 // SECTIONS
 import Header from './assets/sections/Header/index';

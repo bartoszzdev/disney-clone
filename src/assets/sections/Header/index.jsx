@@ -1,14 +1,18 @@
 import React from "react";
 import './style.css';
-/*LOGO*/
+// LOGO
 import Logo from '../../images/logo.svg';
+// REACT ROUTER DOM
+import { Link } from 'react-router-dom'
 
 const Header = ({ showNavbar }) => {
   return (
     <>
-      <button type="button" className="btn-entrar">
-        Entrar
-      </button>
+      <Link to="/login">
+        <button type="button" className="btn-entrar">
+          Entrar
+        </button>
+      </Link>
 
       <header className={`header ${showNavbar && "display-header"}`}>
         <img src={Logo} alt="Disney+ logo" className="logo" />
