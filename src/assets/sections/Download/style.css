@@ -1,26 +1,52 @@
 /* DOWNLOAD SECTION */
 
 .download-section {
-    margin: 4rem;
+    margin: 0 4rem;
     height: 100vh;
     background-image: url('../../images/dl-image.png');
     background-size: 100%;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.download-section h2 {
+.download-text {
+    width: 50%;
+    height: fit-content;
+}
+
+.download-text h2 {
     font-size: 1.5rem;
     margin-bottom: 16px;
 }
 
-.download-section p {
-    width: 100%;
-    max-width: 530px;
+.download-text p {
     font-size: 1.15rem;
     color: #bebebe;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+    .download-section {
+        margin: 0 2rem 2rem 2rem;
+        background-image: url('../../images/dl-image2.png');
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .download-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .download-text p {
+        font-size: 1.05rem;
+    }
 }

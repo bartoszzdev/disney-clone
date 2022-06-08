@@ -19,15 +19,34 @@
 .movie-list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 30%));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 1.3rem;
+    justify-content: center;
 }
 
 .movie-list li {
-    justify-self: center;
     width: 100%;
 }
 
 .movie-list li img {
     width: 100%;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    .movie-section h2 {
+        font-size: 1.7rem;
+    }
+    
+    .movie-section p {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movie-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
